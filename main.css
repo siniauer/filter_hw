@@ -1,0 +1,78 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.2;
+}
+
+
+/* Start your base/mobile styles here */
+
+html, body {
+    font-size: 20px;
+    font-family: 'Dawning of a New Day';
+    margin: 5px;
+    /*  Sets default font-size to 16px, ensuring 1em = 16px; */
+}
+
+.lede, h1 {
+    margin: 5px;
+    padding: 10px;
+}
+
+.item {
+    display: none;
+    width: 25%;
+    float: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+.item img {
+    width: 80%;
+    height: 80%;
+}
+
+.item.active {
+    display: block;
+}
+
+.filter.active {
+    background-color: pink;
+}
+
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+    /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+    .item {
+        display: none;
+        width: 25%;
+        float: left;
+        padding: 5px;
+        margin: 5px;
+    }
+    .item img {
+        width: 80%;
+        height: 80%;
+    }
+    .item.active {
+        display: block;
+    }
+}
+
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <!-- set the character set -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- first step to a responsive site -->
+        <title>Filter assigment</title>
+
+
+
+        <!-- Your styles should be called here -->
+        <link href="https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Delius+Swash+Caps|Euphoria+Script|Loved+by+the+King" rel="stylesheet">
+
+        <link href="main.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- YOUR CONTENT GOES HERE -->
+        <h1>How do you like your breakfast?</h1>
+
+        <p class="lede">
+            <button class="filter" data-filter="lofat">LO-FAT</button>
+            <button class="filter" data-filter="losugar">LO-SUGAR</button>
+            <button class="filter" data-filter="localories">LO-CALORIES</button>
+            <button class="filter" data-filter="nolo">WITH EVERYTHING</button>
+
+
+            <div id="berry" class="lofat localories losugar nolo active item">
+                <img src="images/berry.jpg">
+                <p>Berries
+            </div>
+
+            <div id="cinnamon" class="nolo active item">
+                <img src="images/cinnamon.jpg">
+                <p>Cinnamon Swirl
+            </div>
+
+            <div id="sandwich" class="losugar nolo active item">
+                <img src="images/sandwich.jpg">
+                <p>Egg Sandwich
+            </div>
+
+            <div id="watermelon" class="lofat localories losugar nolo active item">
+                <img src="images/watermelon.jpg">
+                <p>Watermelon
+            </div>
+
+            <div id="egg" class="losugar lofat nolo localories active item">
+                <img src="images/sunnyside.jpg">
+                <p>Fried Egg
+            </div>
+
+            <div id="avocado" class="losugar nolo active item">
+                <img src="images/avocado.jpg">
+                <p>Avocado
+            </div>
+
+            <div id="muffin" class="nolo active item">
+                <img src="images/muffin.jpg">
+                <p>Muffin
+            </div>
+
+            <div id="toast" class="nolo lofat active item">
+                <img src="images/jellytoast.jpg">
+                <p>Jelly Toast
+            </div>
+
+            <div id="pancake" class="nolo active item">
+                <img src="images/pancake.jpg">
+                <p>Pancake
+            </div>
+
+            <div id="banana" class="lofat nolo localories active item">
+                <img src="images/banana.jpg">
+                <p>Banana
+            </div>
+
+            </p>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+            <!-- Your javascript should be called here -->
+            <script src="main.js"></script>
+    </body>
+
+</html>
